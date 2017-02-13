@@ -194,7 +194,6 @@ function process(msg)
   if msg.text:match("^[!/#]help$") and is_sudo(msg) then
     local text = [[
 #راهنما
-@senator_tea
 */block (id)*
 _بلاک کردن از خصوصي ربات_
 */unblock (id)*
@@ -262,7 +261,7 @@ _دريافت مخاطبان ذخيره شده توسط ربات_
           }, dl_cb, nil)
         else
           local text = [[
-_اطلاعات ربات تیم سناتور #تبچی_ :
+_اطلاعات ربات_ :
 _تعداد کاربران_ : ]] .. pvs .. [[
 _تعداد گروها_ : ]] .. gps .. [[
 _تعداد سوپر گروها_ : ]] .. sgps .. [[
